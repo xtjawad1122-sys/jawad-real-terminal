@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JAWAD // REAL LOCAL TERMINAL</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas><div class="scanlines"></div>
+<main class="wrap">
+<header><div class="logo">JAWAD <span>//</span> KALI LAB</div><div class="status">● LOCAL SESSION</div></header>
+<section class="hero">
+<div class="kicker">LOCALHOST • CONTROLLED COMMANDS</div>
+<h1>REAL <span>TERMINAL</span></h1>
+<p>This version runs a local Node.js backend. Supported commands execute for real; it is not just a visual animation.</p>
+<div class="buttons">
+<button data-cmd="help">HELP</button><button data-cmd="whoami">WHOAMI</button><button data-cmd="ipconfig">IP CONFIG</button><button data-cmd="date">DATE</button><button class="danger" data-cmd="clear">CLEAR</button>
+</div>
+</section>
+<section class="terminal-panel">
+<div class="bar"><span>● ● ● &nbsp; LOCAL WEB TERMINAL</span><span id="state">READY</span></div>
+<div id="output" class="output" aria-live="polite">
+<div class="line muted">Connected to local backend.</div>
+<div class="line muted">Type <b>help</b> to see supported real commands.</div>
+</div>
+<form id="form" class="prompt"><b>jawad@localhost:~$</b><input id="command" autocomplete="off" spellcheck="false" autofocus placeholder="Type a command..."><button type="submit">RUN</button></form>
+<div class="footnote">Runs only on this computer (127.0.0.1). File operations stay inside this project's workspace. This is intentionally not an unrestricted shell.</div>
+</section>
+<footer>JAWAD CYBER LAB • LOCAL COMMANDS • USE RESPONSIBLY</footer>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
