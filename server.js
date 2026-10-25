@@ -4,7 +4,7 @@ const path = require("path");
 const os = require("os");
 const { execFile } = require("child_process");
 
-const HOST = "127.0.0.1"; // Keep this local-only.
+const HOST = "0.0.0.0"; // Keep this local-only.
 const PORT = 3000;
 const PUBLIC = path.join(__dirname, "public");
 const WORKSPACE = path.join(__dirname, "workspace");
